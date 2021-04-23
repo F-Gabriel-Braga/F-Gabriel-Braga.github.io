@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pede Limpeza</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="icon" type="imagem/svg" href="./images/icon-pede-limpeza.svg" />
+    
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/table.css">
+</head>
+<body>
+    <header>
+        <div class="box-logo">
+            <img id="logo" src="./images/logo-pede-limpeza.svg" alt="Logo Pede Limpeza">
+            <h1>
+                Cuidando da sua higiene e da sua saúde. Pede!
+            </h1>
+        </div>
+        <a href="#page-landing">
+            <img src="./images/arrow.svg" alt="Seta">
+        </a>
+    </header>
+
+    <main id="page-landing">
+        <h2 id="message">
+            Selecione os produtos para fazer seu pedido
+        </h2>
+        <select class="box-filter" onchange="filter(event)">
+            <option value="default">Todos</option>
+            <option value="detergente">Detergente</option>
+            <option value="amaciante">Amaciante</option>
+            <option value="alvejante">Alvejante</option>
+            <option value="desinfetante">Desinfetante</option>
+            <option value="alcool">Alcool</option>
+            <option value="utensilio">Utensílio</option>
+            <option value="sabao">Sabão</option>
+        </select>
+        <section class="box-samples">
+            <div onclick="add_to_shopping_cart(event)" class="grid-item">
+                <div id="quantity">0</div>
+                <div id="back" onclick="remove_to_shopping_cart(event)">
+                    <img src="./images/arrow-left.svg" alt="Voltar">
+                </div>
+                <div class="box-image">
+                    <img src="./images/samples/p1.png" alt="Detergente">
+                </div>
+                <div id="detergente" class="box-info-sample">
+                    <p>Detergente</p>
+                    <strong>R$ <span id="valor">2,50</span></strong>
+                </div>
+            </div>
+
+            <div onclick="add_to_shopping_cart(event)" class="grid-item">
+                <div id="quantity">0</div>
+                <div id="back" onclick="remove_to_shopping_cart(event)">
+                    <img src="./images/arrow-left.svg" alt="Voltar">
+                </div>
+                <div class="box-image">
+                    <img src="./images/samples/p2.png" alt="Amaciante">
+                </div>
+                <div id="amaciante" class="box-info-sample">
+                    <p>Amaciante</p>
+                    <strong>R$ <span id="valor">4,50</span></strong>
+                </div>
+            </div>
+
+            <div onclick="add_to_shopping_cart(event)" class="grid-item">
+                <div id="quantity">0</div>
+                <div id="back" onclick="remove_to_shopping_cart(event)">
+                    <img src="./images/arrow-left.svg" alt="Voltar">
+                </div>
+                <div class="box-image">
+                    <img src="./images/samples/p3.png" alt="Alcool">
+                </div>
+                <div id="alcool" class="box-info-sample">
+                    <p>Alcool</p>
+                    <strong>R$ <span id="valor">2,00</span></strong>
+                </div>
+            </div>
+
+            <div onclick="add_to_shopping_cart(event)" class="grid-item">
+                <div id="quantity">0</div>
+                <div id="back" onclick="remove_to_shopping_cart(event)">
+                    <img src="./images/arrow-left.svg" alt="Voltar">
+                </div>
+                <div class="box-image">
+                    <img src="./images/samples/p4.png" alt="Esponja">
+                </div>
+                <div id="utensilio" class="box-info-sample">
+                    <p>Esponja</p>
+                    <strong>R$ <span id="valor">1,00</span></strong>
+                </div>
+            </div>
+
+            <div onclick="add_to_shopping_cart(event)" class="grid-item">
+                <div id="quantity">0</div>
+                <div id="back" onclick="remove_to_shopping_cart(event)">
+                    <img src="./images/arrow-left.svg" alt="Voltar">
+                </div>
+                <div class="box-image">
+                    <img src="./images/samples/p5.png" alt="Pano de Chão">
+                </div>
+                <div id="utensilio" class="box-info-sample">
+                    <p>Pano de Chão</p>
+                    <strong>R$ <span id="valor">2,50</span></strong>
+                </div>
+            </div>
+
+            <div onclick="add_to_shopping_cart(event)" class="grid-item">
+                <div id="quantity">0</div>
+                <div id="back" onclick="remove_to_shopping_cart(event)">
+                    <img src="./images/arrow-left.svg" alt="Voltar">
+                </div>
+                <div class="box-image">
+                    <img src="./images/samples/p6.png" alt="Água Sanitária">
+                </div>
+                <div id="agua-sanitaria" class="box-info-sample">
+                    <p>Água Sanitária</p>
+                    <strong>R$ <span id="valor">5,00</span></strong>
+                </div>
+            </div>
+
+            <div onclick="add_to_shopping_cart(event)" class="grid-item">
+                <div id="quantity">0</div>
+                <div id="back" onclick="remove_to_shopping_cart(event)">
+                    <img src="./images/arrow-left.svg" alt="Voltar">
+                </div>
+                <div class="box-image">
+                    <img src="./images/samples/p7.png" alt="Sabão Líquido">
+                </div>
+                <div id="sabao" class="box-info-sample">
+                    <p>Sabão Líquido</p>
+                    <strong>R$ <span id="valor">12,50</span></strong>
+                </div>
+            </div>
+
+            <div onclick="add_to_shopping_cart(event)" class="grid-item">
+                <div id="quantity">0</div>
+                <div id="back" onclick="remove_to_shopping_cart(event)">
+                    <img src="./images/arrow-left.svg" alt="Voltar">
+                </div>
+                <div class="box-image">
+                    <img src="./images/samples/p8.png" alt="Desinfetante 5L">
+                </div>
+                <div id="desinfetante" class="box-info-sample">
+                    <p>Desinfetante 5L</p>
+                    <strong>R$ <span id="valor">10,00</span></strong>
+                </div>
+            </div>
+
+            <div onclick="add_to_shopping_cart(event)" class="grid-item">
+                <div id="quantity">0</div>
+                <div id="back" onclick="remove_to_shopping_cart(event)">
+                    <img src="./images/arrow-left.svg" alt="Voltar">
+                </div>
+                <div class="box-image">
+                    <img src="./images/samples/p9.png" alt="Detergente">
+                </div>
+                <div id="desinfetante" class="box-info-sample">
+                    <p>Desinfetante 1L</p>
+                    <strong>R$ <span id="valor">6,00</span></strong>
+                </div>
+            </div>
+
+            <div onclick="add_to_shopping_cart(event)" class="grid-item">
+                <div id="quantity">0</div>
+                <div id="back" onclick="remove_to_shopping_cart(event)">
+                    <img src="./images/arrow-left.svg" alt="Voltar">
+                </div>
+                <div class="box-image">
+                    <img src="./images/samples/p10.png" alt="Alvejante">
+                </div>
+                <div id="alvejante" class="box-info-sample">
+                    <p>Alvejante</p>
+                    <strong>R$ <span id="valor">7,00</span></strong>
+                </div>
+            </div>
+
+            <div onclick="add_to_shopping_cart(event)" class="grid-item">
+                <div id="quantity">0</div>
+                <div id="back" onclick="remove_to_shopping_cart(event)">
+                    <img src="./images/arrow-left.svg" alt="Voltar">
+                </div>
+                <div class="box-image">
+                    <img src="./images/samples/p11.png" alt="Rôdo">
+                </div>
+                <div id="utensilio" class="box-info-sample">
+                    <p>Rôdo</p>
+                    <strong>R$ <span id="valor">6,00</span></strong>
+                </div>
+            </div>
+
+            <div onclick="add_to_shopping_cart(event)" class="grid-item">
+                <div id="quantity">0</div>
+                <div id="back" onclick="remove_to_shopping_cart(event)">
+                    <img src="./images/arrow-left.svg" alt="Voltar">
+                </div>
+                <div class="box-image">
+                    <img src="./images/samples/p12.png" alt="Vassoura">
+                </div>
+                <div id="utensilio" class="box-info-sample">
+                    <p>Vassoura</p>
+                    <strong>R$ <span id="valor">8,00</span></strong>
+                </div>
+            </div>
+        </section>
+
+        <div class="box-table">
+            <div class="box-info-order">
+                <table>
+                    <colgroup>
+                        <col style="width:30%">
+                        <col style="width:45%">
+                        <col style="width:25%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Quantidade</th>
+                            <th>Descrição</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                    <tfoot>
+                        <th>Total</th>
+                        <th>R$ 00.00</th>
+                    </tfoot>
+    
+                </table>
+            </div>
+        </div>
+
+        <h2 id="message">
+            Agora precisamos saber seu nome e seu endereço
+        </h2>
+
+        <div id="box-form" class="box-form">
+            <div class="box-input">
+                <label for="name">Nome:</label>
+                <input type="text" id="name">
+            </div>
+
+            <div class="box-input">
+                <label for="address">Endereço:</label>
+                <textarea id="address"></textarea>
+            </div>
+
+            <a href="#box-form" onclick="generate_order()" id="button">
+                <span>Pedir</span><img src="./images/icon-whatsapp.svg" alt="">
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <span>Criado por <a href="https://f-gabriel-braga.github.io/" target="_blank">Gabriel Braga</a></span>
+    </footer>
+    <script src="./script/script.js"></script>
+</body>
+</html>
