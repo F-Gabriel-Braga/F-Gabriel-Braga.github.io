@@ -1,0 +1,18 @@
+@keyframes skip {
+    0% {
+        transform: translateY(-10%);
+    }
+    50% {
+        transform: translateY(10%);
+    }
+    100% {
+        transform: translateY(-10%);
+    }
+}
+
+.animate-skip {
+    animation-name: skip;
+    animation-duration: 0s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
