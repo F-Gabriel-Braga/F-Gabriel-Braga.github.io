@@ -1,8 +1,8 @@
 body::after {
     content: "";
-    position: fixed;
+    position: absolute;
     background-color: #FFFFFF;
-    top: 280px;
+    top: 18rem;
     right: 0;
     bottom: 0;
     left: 0;

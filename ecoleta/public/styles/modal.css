@@ -38,6 +38,8 @@
 }
 
 .modal .header h1 {
+    flex: 1;
+    margin-right: 30px;
     color: #FFFFFF;
     font-size: 36px;
     line-height: 40px;
@@ -51,13 +53,17 @@
 }
 
 .modal form .field {
+    height: 72px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 .modal form input {
     flex: 1;
-    background-image: #F0F0F5;
+    height: 72px;
+    background-color: #F0F0F5;
     border-radius: 8px 0 0 8px;
     border: none;
     padding: 16px 24px;

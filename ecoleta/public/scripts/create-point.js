@@ -8,7 +8,7 @@ function populateUFs() {
     })
     .then(function(states) {
         for(state of states) {
-            ufSelect.innerHTML += `<option value=${state.id}>${state.nome}</option>`
+            ufSelect.innerHTML += `<option value='${state.id}'>${state.nome}</option>`
         }
     })
 }
@@ -37,7 +37,7 @@ function getCities(event) {
     .then(function(cities) {
         if(cities.length > 0) {
             for(city of cities) {
-                citySelect.innerHTML += `<option value=${city.nome}>${city.nome}</option>`
+                citySelect.innerHTML += `<option value='${city.nome}'>${city.nome}</option>`
             }
             citySelect.disabled = false
         }

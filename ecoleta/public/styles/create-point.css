@@ -13,7 +13,6 @@
 }
 
 #page-create-point header a {
-    width: 220px;
     color: var(--title-color);
     font-weight: bold;
 
@@ -53,11 +52,22 @@ form fieldset {
 }
 
 form legend {
+    width: 100%;
     margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 form legend h2 {
     font-size: 25px;
+}
+
+form legend span {
+    font-size: 15px;
+    color: var(--title-color);
+
 }
 
 form .field {
@@ -81,6 +91,7 @@ form select {
     font-size: 16px;
 
     outline: none;
+    border: 1px solid #F0F0F5;
 }
 
 form input:focus,
