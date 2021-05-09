@@ -1,8 +1,8 @@
 # Web Projects :grin::computer::earth_americas:
 ## Acesse:
-### :rocket: [Site](F-Gabriel-Braga.github.io/site/)
-### :rocket: [Pede Limpeza](F-Gabriel-Braga.github.io/pede-limpeza/)
-### :rocket: [Music Player](F-Gabriel-Braga.github.io/music-player/)
-### :rocket: [Diário de Bordo](F-Gabriel-Braga.github.io/diario-de-bordo/)
-### :rocket: [Fire DOOM](F-Gabriel-Braga.github.io/fogo-DOOM/)
-### :rocket: [Calculadora](F-Gabriel-Braga.github.io/calculadora-js/)
+### :rocket: [Site](https://f-gabriel-braga.github.io/site/)
+### :rocket: [Pede Limpeza](https://f-gabriel-braga.github.io/pede-limpeza/)
+### :rocket: [Music Player](https://f-gabriel-braga.github.io/music-player/)
+### :rocket: [Diário de Bordo](https://f-gabriel-braga.github.io/diario-de-bordo/)
+### :rocket: [Fire DOOM](https://f-gabriel-braga.github.io/fogo-DOOM/)
+### :rocket: [Calculadora](https://f-gabriel-braga.github.io/calculadora-js/)
